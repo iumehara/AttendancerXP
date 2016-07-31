@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "AttendancerXP",
-  "version": "0.1",
+  "version": "0.2",
   "icons": {
     "128": "icon.png"
   },
@@ -10,8 +10,8 @@
     "scripts": ["background.js"]
   },
   "content_scripts": [{
-      "matches": ["https://attendance.cvi.co.jp/AttendanceTableFullSimp.aspx"],
-      "js": ["content.js"]
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
   }],
   "page_action": {
     "default_icon": "icon.png"
